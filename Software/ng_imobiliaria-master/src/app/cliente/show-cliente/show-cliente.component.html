@@ -1,0 +1,70 @@
+<div class="row">
+  <div class="container">
+    <div id="showPanel" *ngIf="cliente">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+              <div class="col-md-6">
+                  <p>
+                      <strong>Nome:</strong>
+                      {{cliente.nome}}
+                    </p>
+                    <p>
+                      <strong>RG:</strong>
+                      {{cliente.rg}}
+                    </p>
+                    <p>
+                      <strong *ngIf="cliente.tipoCadastroPessoa">CPF:</strong>
+                      <strong *ngElse>CNPJ:</strong>
+                      {{cliente.cadastroPessoa}}
+                    </p>
+                    <p>
+                      <strong>Telefone:</strong>
+                      {{cliente.telefone}}
+                    </p>
+              </div>
+              <div class="col-md-6">
+                  <p>
+                      <strong>Email:</strong>
+                      {{cliente.email}}
+                    </p>
+                    <p>
+                      <strong>Profissão:</strong>
+                      {{cliente.profissao}}
+                    </p>
+                    <p>
+                      <strong>Tipo:</strong>
+                      {{cliente.tipoCliente}}
+                    </p>
+              </div>
+              <div class="col-md-6">
+                  <strong>Endereço:</strong>
+                  <div class="mx-4">
+                      <div>
+                          <strong>Rua:</strong>
+                          {{cliente.endereco.rua}}
+                        </div>
+                        <div>
+                          <strong>Bairro:</strong>
+                          {{cliente.endereco.bairro}}
+                        </div>
+                        <div>
+                          <strong>Número:</strong>
+                          {{cliente.endereco.numero}}
+                        </div>
+                        <div>
+                          <strong>CEP:</strong>
+                          {{cliente.endereco.cep}}
+                        </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      
+        <div class="col-md-2">
+          <a href="#" (click)="edit()">Edit</a> | <a href="#" (click)="back()">Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

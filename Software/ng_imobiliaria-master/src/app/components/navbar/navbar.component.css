@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid black;
+}
+.navbar {
+    padding-right: 3%;
+    padding-left: 3%;
+}
+.navbar .nav-item i {
+    font-size: 20px;
+}
+
+.navbar .nav-item h5 {
+    font-size: 15px;
+}

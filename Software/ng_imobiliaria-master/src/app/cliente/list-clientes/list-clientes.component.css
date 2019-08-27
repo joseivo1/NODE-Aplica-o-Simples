@@ -1,0 +1,72 @@
+.navbar {
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.navbar ul li {
+    width: 100px;
+    padding: 0;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+}
+.row {
+    width: 100%;
+}
+
+.input-group {
+    width: 100%;
+}
+.input-group span {
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.input-group input {
+    border-left: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+   
+}
+table {
+    height: 30vw;
+    border: 2px solid black;
+    padding: 0;
+}
+
+thead {
+    background-color: gray;
+    padding: 0;
+}
+
+/* for custom scrollbar for webkit browser*/
+
+.scrollable-menu {
+    height: auto;
+    max-height: 135px;
+    overflow-x: hidden;
+    padding-right: 6px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(227, 220, 220);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: rgb(112, 112, 112);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    /*outline: 1px solid slategrey;*/
+}

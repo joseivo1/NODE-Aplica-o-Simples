@@ -1,0 +1,10 @@
+.nav {
+    border-bottom: 1px solid black;
+    padding-left: 2%;
+   
+}
+
+.nav a {
+    color: black;
+    font-weight: 600px;
+}
